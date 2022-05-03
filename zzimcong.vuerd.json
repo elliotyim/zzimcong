@@ -1020,7 +1020,7 @@
           }
         ],
         "ui": {
-          "active": true,
+          "active": false,
           "left": 557,
           "top": 648,
           "zIndex": 28,
@@ -1236,10 +1236,10 @@
           }
         ],
         "ui": {
-          "active": false,
+          "active": true,
           "left": 537,
-          "top": 115,
-          "zIndex": 22,
+          "top": 118,
+          "zIndex": 29,
           "widthName": 60,
           "widthComment": 60
         },
@@ -1604,7 +1604,7 @@
       },
       {
         "identification": false,
-        "relationshipType": "OneOnly",
+        "relationshipType": "OneN",
         "startRelationshipType": "Dash",
         "start": {
           "tableId": "9a74a33d-bd9b-408e-83bf-717bb3201245",
@@ -1621,7 +1621,7 @@
             "7d32b1b5-9e04-40e5-b69f-8baa63757fc3"
           ],
           "x": 940.29296875,
-          "y": 180.25,
+          "y": 183.25,
           "direction": "right"
         },
         "constraintName": "fk_customer_to_store",
@@ -1638,7 +1638,7 @@
             "dd5bf19b-4f77-49a4-8bc6-64445dd6ad4c"
           ],
           "x": 738.646484375,
-          "y": 245.5,
+          "y": 248.5,
           "direction": "bottom"
         },
         "end": {

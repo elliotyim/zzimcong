@@ -1,8 +1,6 @@
 package com.example.demo.model;
 
-import javax.persistence.Entity;
-import javax.persistence.Id;
-import javax.persistence.OneToMany;
+import javax.persistence.*;
 import java.util.HashSet;
 import java.util.Set;
 
@@ -21,4 +19,8 @@ public class Customer {
 
     @OneToMany(mappedBy = "customer")
     private Set<Order> orders = new HashSet<>();
+
+    @OneToOne
+    @JoinColumn(name = "address_id")
+    private Address address;
 }

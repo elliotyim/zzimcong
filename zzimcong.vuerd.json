@@ -43,7 +43,7 @@
   "table": {
     "tables": [
       {
-        "name": "primary_category",
+        "name": "primary_categories",
         "comment": "",
         "columns": [
           {
@@ -97,15 +97,15 @@
           "active": false,
           "left": 52.3335,
           "top": 6.3332,
-          "zIndex": 2,
-          "widthName": 104.31787109375,
+          "zIndex": 28,
+          "widthName": 113.134765625,
           "widthComment": 60
         },
         "visible": true,
         "id": "89a77e9b-1be9-4ad5-87ea-1a70954e0521"
       },
       {
-        "name": "category",
+        "name": "categories",
         "comment": "",
         "columns": [
           {
@@ -182,15 +182,15 @@
           "active": false,
           "left": 18.3325,
           "top": 224.6662,
-          "zIndex": 1,
-          "widthName": 60,
+          "zIndex": 26,
+          "widthName": 62.23291015625,
           "widthComment": 60
         },
         "visible": true,
         "id": "10bd5ff8-30b7-4ee0-a3bf-4498f04d2b20"
       },
       {
-        "name": "item",
+        "name": "items",
         "comment": "",
         "columns": [
           {
@@ -290,7 +290,7 @@
           "active": false,
           "left": 45.6669,
           "top": 493.3339,
-          "zIndex": 3,
+          "zIndex": 24,
           "widthName": 60,
           "widthComment": 60
         },
@@ -298,7 +298,7 @@
         "id": "0f20430e-5ea6-44cb-a5ad-4880baecc47b"
       },
       {
-        "name": "item_option",
+        "name": "item_options",
         "comment": "",
         "columns": [
           {
@@ -398,15 +398,15 @@
           "active": false,
           "left": 51.0007,
           "top": 756.333,
-          "zIndex": 4,
-          "widthName": 72.08447265625,
+          "zIndex": 30,
+          "widthName": 77.71484375,
           "widthComment": 60
         },
         "visible": true,
         "id": "e848f7b9-97a7-4d3f-b49d-3aead5622f6f"
       },
       {
-        "name": "address",
+        "name": "addresses",
         "comment": "",
         "columns": [
           {
@@ -552,7 +552,7 @@
           "active": false,
           "left": 1513.9997,
           "top": 422.9995,
-          "zIndex": 10,
+          "zIndex": 36,
           "widthName": 60,
           "widthComment": 60
         },
@@ -560,7 +560,7 @@
         "id": "968db004-461e-42c5-af45-ec77d5e60a28"
       },
       {
-        "name": "customer",
+        "name": "customers",
         "comment": "",
         "columns": [
           {
@@ -729,15 +729,15 @@
           "active": false,
           "left": 1042,
           "top": 77,
-          "zIndex": 13,
-          "widthName": 60,
+          "zIndex": 18,
+          "widthName": 62.16943359375,
           "widthComment": 60
         },
         "visible": true,
         "id": "9a74a33d-bd9b-408e-83bf-717bb3201245"
       },
       {
-        "name": "city",
+        "name": "cities",
         "comment": "",
         "columns": [
           {
@@ -791,7 +791,7 @@
           "active": false,
           "left": 1514,
           "top": 182,
-          "zIndex": 11,
+          "zIndex": 34,
           "widthName": 60,
           "widthComment": 60
         },
@@ -799,7 +799,7 @@
         "id": "8c913d89-e340-4275-98eb-0962e09a0aea"
       },
       {
-        "name": "zone",
+        "name": "zones",
         "comment": "",
         "columns": [
           {
@@ -853,7 +853,7 @@
           "active": false,
           "left": 1515,
           "top": 729,
-          "zIndex": 12,
+          "zIndex": 38,
           "widthName": 60,
           "widthComment": 60
         },
@@ -861,7 +861,7 @@
         "id": "d79b4dc6-8897-4c28-938d-41720127e1f8"
       },
       {
-        "name": "customer_order",
+        "name": "orders",
         "comment": "",
         "columns": [
           {
@@ -938,15 +938,15 @@
           "active": false,
           "left": 1054,
           "top": 480,
-          "zIndex": 24,
-          "widthName": 93.55859375,
+          "zIndex": 15,
+          "widthName": 60,
           "widthComment": 60
         },
         "visible": true,
         "id": "1c87089c-cae2-4a1b-8f4d-7348f9e4113e"
       },
       {
-        "name": "customer_order_item",
+        "name": "order_item",
         "comment": "",
         "columns": [
           {
@@ -1023,15 +1023,15 @@
           "active": false,
           "left": 557,
           "top": 648,
-          "zIndex": 28,
-          "widthName": 125.06201171875,
+          "zIndex": 40,
+          "widthName": 65.0830078125,
           "widthComment": 60
         },
         "visible": true,
         "id": "10965c33-9251-4b1a-8ca3-f9db3d5d7b0c"
       },
       {
-        "name": "payment",
+        "name": "payments",
         "comment": "",
         "columns": [
           {
@@ -1154,7 +1154,7 @@
           "active": false,
           "left": 1061,
           "top": 730,
-          "zIndex": 9,
+          "zIndex": 32,
           "widthName": 60,
           "widthComment": 60
         },
@@ -1162,7 +1162,7 @@
         "id": "6e4ef70b-ffb8-4d8e-aa33-3949413ec5f2"
       },
       {
-        "name": "store",
+        "name": "stores",
         "comment": "",
         "columns": [
           {
@@ -1236,10 +1236,10 @@
           }
         ],
         "ui": {
-          "active": true,
+          "active": false,
           "left": 537,
           "top": 118,
-          "zIndex": 29,
+          "zIndex": 20,
           "widthName": 60,
           "widthComment": 60
         },
@@ -1301,7 +1301,7 @@
           "active": false,
           "left": 555,
           "top": 476,
-          "zIndex": 6,
+          "zIndex": 22,
           "widthName": 62.66455078125,
           "widthComment": 60
         },

@@ -4,7 +4,7 @@ import javax.persistence.*;
 import java.util.HashSet;
 import java.util.Set;
 
-@Entity
+@Entity(name = "item_options")
 public class ItemOption {
     @Id
     private String id;
@@ -15,6 +15,6 @@ public class ItemOption {
     @JoinColumn(name = "item_id")
     private Item item;
 
-    @ManyToMany(mappedBy = "itemOptions")
-    private Set<CustomerOrder> customerOrders = new HashSet<>();
+    @OneToMany(mappedBy = "itemOption")
+    private Set<OrderItem> orderItems = new HashSet<>();
 }

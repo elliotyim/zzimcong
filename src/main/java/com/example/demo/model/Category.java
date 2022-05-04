@@ -3,7 +3,7 @@ package com.example.demo.model;
 import javax.persistence.*;
 import java.util.Set;
 
-@Entity
+@Entity(name = "categories")
 public class Category {
     @Id
     private String id;

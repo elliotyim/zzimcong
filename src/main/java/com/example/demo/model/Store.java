@@ -1,9 +1,10 @@
 package com.example.demo.model;
 
 import javax.persistence.*;
+import java.util.HashSet;
 import java.util.Set;
 
-@Entity
+@Entity(name = "stores")
 public class Store {
     @Id
     private String id;
@@ -13,6 +14,6 @@ public class Store {
     @JoinColumn(name = "owner_id")
     private Customer customer;
 
-    @ManyToMany(mappedBy = "stores")
-    private Set<Item> items;
+    @OneToMany(mappedBy = "store")
+    private Set<StoreItem> storeItems = new HashSet<>();
 }

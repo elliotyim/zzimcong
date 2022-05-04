@@ -6,7 +6,7 @@ import javax.persistence.OneToMany;
 import java.util.HashSet;
 import java.util.Set;
 
-@Entity
+@Entity(name = "customers")
 public class Customer {
     @Id
     private String id;
@@ -20,5 +20,5 @@ public class Customer {
     private Set<Store> stores = new HashSet<>();
 
     @OneToMany(mappedBy = "customer")
-    private Set<CustomerOrder> customerOrders = new HashSet<>();
+    private Set<Order> orders = new HashSet<>();
 }

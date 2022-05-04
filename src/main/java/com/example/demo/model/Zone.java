@@ -6,7 +6,7 @@ import javax.persistence.OneToMany;
 import java.util.HashSet;
 import java.util.Set;
 
-@Entity
+@Entity(name = "zones")
 public class Zone {
     @Id
     private String id;

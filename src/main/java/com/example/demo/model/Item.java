@@ -4,7 +4,7 @@ import javax.persistence.*;
 import java.util.HashSet;
 import java.util.Set;
 
-@Entity
+@Entity(name = "items")
 public class Item {
     @Id
     private String id;
@@ -16,14 +16,11 @@ public class Item {
     private Category category;
 
     @OneToMany(mappedBy = "item")
-    private Set<ItemOption> itemOptions;
+    private Set<ItemOption> itemOptions = new HashSet<>();
 
-    @ManyToMany
-    @JoinTable(name = "store_item",
-                joinColumns = @JoinColumn(name = "item_id"),
-                inverseJoinColumns = @JoinColumn(name = "store_id"))
-    private Set<Store> stores = new HashSet<>();
+    @OneToMany(mappedBy = "item")
+    private Set<StoreItem> storeItems = new HashSet<>();
 
-    @ManyToMany(mappedBy = "items")
-    private Set<CustomerOrder> customerOrders = new HashSet<>();
+    @OneToMany(mappedBy = "item")
+    private Set<OrderItem> orderItems = new HashSet<>();
 }

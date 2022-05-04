@@ -5,7 +5,7 @@ import javax.persistence.Id;
 import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
 
-@Entity
+@Entity(name = "payments")
 public class Payment {
     @Id
     private String id;
@@ -15,5 +15,5 @@ public class Payment {
 
     @ManyToOne
     @JoinColumn(name = "order_id")
-    private CustomerOrder customerOrder;
+    private Order order;
 }

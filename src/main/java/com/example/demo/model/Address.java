@@ -13,6 +13,9 @@ public class Address {
     @OneToOne(mappedBy = "address")
     private Customer customer;
 
+    @OneToOne(mappedBy = "address")
+    private Order order;
+
     @ManyToOne
     @JoinColumn(name = "city_id")
     private City city;
